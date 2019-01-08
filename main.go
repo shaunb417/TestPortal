@@ -14,7 +14,7 @@ type PageVariables struct {
 
 func main() {
 	http.HandleFunc("/", HomePage)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":9090", nil))
 }
 
 func HomePage(w http.ResponseWriter, r *http.Request) { //build Template

@@ -17,8 +17,7 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
-func HomePage(w http.ResponseWriter, r *http.Request) {
-
+func HomePage(w http.ResponseWriter, r *http.Request) { //build Template
 	now := time.Now()              //finds the time right now
 	HomePageVars := PageVariables{ //stores the date and time struct on load
 		Date: now.Format("02-01-2006"),
